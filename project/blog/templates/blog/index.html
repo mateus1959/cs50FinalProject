@@ -6,14 +6,15 @@
 <body>
     <h1>Welcome to this Knowledge Seekers Community</h1>
     <p>Learn about good books on any topic of interest from those who already read that book.</p>
-    <form>
+    <form action="">
         <label for="select_topic">Filter by topic (genre)</label>
-        <select id="select_topic">
-            <option>Technology</option>
-            <option>Economics</option>
-            <option>Religion</option>
-            <option>Psychology</option>
+        <select id="select_topic" name="topic">
+            <option value="technology">Technology</option>
+            <option value="economics">Economics</option>
+            <option value="religion">Religion</option>
+            <option value="psychology">Psychology</option>
         </select>
+        <input type="submit" value="Search">
     </form>
     <ul>
         {% for post in posts %}
